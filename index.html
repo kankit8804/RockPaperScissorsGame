@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body >  
+  <header>
+    <h1 class="title">Rock Paper Scissors</h1>
+  </header>
+  
+  <div class="gameImage">
+    <div class="userGame"></div>
+    <div class="computerGame"></div>
+    <div id="user-label" class="badge">User Move</div>
+    <div id="computer-label" class="badge">Computer Move</div>
+  </div>
+   
+
+    <div class="userMove">
+      <div class="button-selector">
+        <button onclick="
+          userChoice = 'rock';
+          clicking(userChoice);
+          " class="move-button rock-button">
+        </button>
+
+        <button onclick="
+          userChoice = 'paper';
+          clicking(userChoice);
+          " class="move-button paper-button">
+        </button>
+
+        <button onclick="
+          userChoice ='scissors';
+          clicking(userChoice);
+          " class="move-button scissor-button">
+        </button>
+
+      </div>
+    
+      <div class="userMoveText">
+        <h4>Make Your Move</h4>
+      </div>
+      
+    </div>
+  <div class="scoreCard">
+    <div class="greeting">
+      <label for="name">
+        Hello <input type="text" id="name" name="name" placeholder="Name here">
+      </label>
+    </div>
+  
+    <p class="result js-result"></p>
+    <p class = "score js-score"> Wins: 1 , Losses: 0, Ties: 0</p>
+
+ 
+    <button class="reset-score-button" onclick=" 
+      resetScore();
+      resetGame();
+      "  > Reset Score
+    </button> 
+
+  </div>
+    
+    
+  <script src="script.js"> </script>
+</body>
+</html>

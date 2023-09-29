@@ -1,0 +1,179 @@
+
+header{
+  text-align: center;
+  background-color: aliceblue;
+  height: 50px;
+ 
+ }
+ 
+ body{
+   background-color: black;
+ }
+ .userMove {
+   margin: 50px auto; 
+   padding: 10px;
+   display: grid;
+   align-items: center;
+   justify-content: center;
+ 
+ }
+ 
+ .button-selector{
+   display: flex;
+ }
+ 
+ .rock-button, .paper-button, .scissor-button {
+   width: 87px;
+   height: 87px; 
+   margin:0 15px;
+   background-size: contain;
+   background-color: black;
+   background-repeat: no-repeat;
+   border: 4px solid rgb(237, 233, 233);
+   border-radius: 50%;
+   display:inline-block;
+   padding: 10px;
+   transition: all 0.3 ease;
+ }
+ 
+ .move-button:hover{
+   cursor: pointer;
+   background-color: rgb(38, 32, 32);
+ }
+ 
+ .userMoveText{
+   margin-left:85px; 
+   width: 150px;
+   color: bisque;
+   font-size: larger;
+   font-weight: bold;
+ }
+ 
+ .rock-button {
+   background-image: url(images/rock.svg);
+ }
+ 
+ .paper-button {
+   background-image: url(images/paper.svg);
+ }
+ 
+ .scissor-button {
+   background-image: url(images/scissors.svg);
+ }
+ 
+ .resetbutton{
+   margin-left: 850px ;
+   background-color: brown;
+ }
+ 
+ .scoreCard{
+   display: grid;
+   background-color:black;
+   font-size: large;
+   margin: 30px auto;
+   width:280px;
+   height:200px;
+ }
+ 
+ p{
+   color: rgb(229, 226, 226);
+   margin-left: 8px;
+   font-size:20px;
+   font-weight: 600;
+ }
+ 
+ .greeting label{
+   display: flex;
+   color:aliceblue;
+ }
+ 
+ .greeting label input{
+   margin-left:8px;
+   min-width: 0;
+ }
+ .greeting label, .greeting label #name{
+   background-color: black;
+   color: aliceblue;
+   font-size:20px;
+   font-weight: 600;
+   max-width: 200px;
+   margin-left: 8px;
+   border:0 ;
+ }
+ 
+ .reset-score-button{
+   margin-left: 5px;
+   width: 120px;
+   font-weight: bold;
+   font-size: 15px;
+   border-radius: 5px;
+   
+ }
+ .reset-score-button:hover{
+   cursor: pointer;
+   background-color: #E25840;
+ }
+ 
+ .gameImage {
+   position: relative;
+   margin:30px auto;
+   display: flex;
+   width: 600px;
+   height: 350px;
+   border-radius: 10px;
+   border:3px solid white;
+ 
+ }
+ 
+ .badge{
+   background-color: #E25840; 
+   color:white;
+   font-size:15px;
+   padding:4px 10px;
+   
+ }
+ 
+ #user-label{
+   position:absolute;
+   top:325px;
+   left:98px;
+ }
+ 
+ #computer-label{
+   position:absolute;
+   top:325px;
+   right:98px;
+ }
+ 
+ .userGame {
+   width: 300px;
+   height: 300px;
+   background: var(--userImage);
+   background-size: contain;
+   background-repeat: no-repeat;
+   animation: var(--anime);
+   
+ }
+ 
+ .computerGame {
+   width: 300px;
+   height: 300px;
+   background: var(--computerImage);
+   background-size: contain;
+   background-repeat: no-repeat;
+ }
+ 
+ .addAnimation {
+   animation: imageDisplay 0.5s ease-in;
+ }
+ 
+ @keyframes imageDisplay{
+   0% {
+     transform: scale(0,0);
+   }
+   100% {
+     transform: scale(1,1);
+   }
+ }
+ 
+ 
